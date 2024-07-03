@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <title>amore</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href=""><img src="./images/logo.png" alt=""></a></h1>
+            <button class="btn-nav"><img src="./images/btn_aside_open.png" alt=""></button>
+            <button class="btn-sns"><img src="./images/btn_sns_open.png" alt=""></button>
+            <nav>
+                <button class="btn-cls"><img src="./images/btn_aside_close.png" alt=""></button>
+                <ul class="util">
+                    <li><a href="">STORE</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li>
+                        <a href="">SEARCH</a>
+                        <form action="">
+                            <input type="text" class="pc">
+                        </form>
+                        <button class="btn-sc"><img src="./images/btn_util_search.png" alt="pc"></button>
+                    </li>
+                </ul>
+                <ul class="gnb">
+                    <li><a href="">AT THIS MOMENT</a></li>
+                    <li><a href="">HERITAGE OF AMOREPACIFIC</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">MEDIA GALLERY</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <a href="">
+                <img class="m" src="./images/img_visual_1_m.jpg" alt="">
+                <img class="tab pc" src="./images/img_visual_1.jpg" alt="">
+                <div class="wrap">
+                    <div class="txt">시간을 압도하는<br>
+                        단 하나의 안티에이징<br>
+                        TIME RESPONSE Skin Renewal Creme<br>
+                        AMOREPACIFIC의 독자적인 녹차 콜렉션이<br>
+                        무너진 피부 시간을 되돌리다.
+                    </div>
+                    <div class="box">VIEW DETAILS</div>
+                </div>
+            </a>
+        </div>
+        <div class="s1">
+            <div class="con">
+                <a href="">
+                    <img src="./images/img_main_artbook_m.jpg" alt="" class="m">
+                    <img src="./images/img_main_artbook.jpg" alt="" class="tab pc">
+                    <div class="wrap">
+                        <div class="txt">BRAND FILM<br>TIMELESS BEAUTY, AMOREPACIFIC</div>
+                        <div class="box">PLAY FILM</div>
+                    </div>
+                </a>
+            </div>
+            <div class="con">
+                <a href="">
+                    <img src="./images/img_main_film_m.jpg" alt="" class="m">
+                    <img src="./images/img_main_film.jpg" alt="" class="tab pc">
+                    <div class="wrap">
+                        <div class="txt">ART BOOK<br>FLAGSHIP BRAND EXPERIENCE</div>
+                        <div class="box">VIEW DETAILS</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="con">
+                <a href="">
+                    <div class="thumb"><img src="./images/img_news_1.jpg" alt=""></div>
+                    <div class="box">70주년 기념<br><span>VIEW DETAILS</span></div>
+                </a>
+            </div>
+            <div class="con">
+                <a href="">
+                    <div class="thumb"><img src="./images/img_news_2_m.jpg" alt="" class="m"></div>
+                    <div class="thumb"><img src="./images/img_news_2.jpg" alt="" class="tab pc"></div>
+                    <div class="box">브랜드 웹사이트 리뉴얼<br>새로운 공간을 만나보세요.<br><span>VIEW DETAIL</span></div>
+                </a>
+            </div>
+            <div class="con">
+                <a href="">
+                <div class="thumb"><img src="./images/img_news_3.jpg" alt=""></div>
+                <div class="box">뉴욕 BloomingDale's입점<br><span>VIEW DETAILS</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const $nav = document.querySelector("nav");
+        const $navOpn = document.querySelector(".btn-nav");
+        const $navCls = document.querySelector(".btn-cls");
+
+        $navOpn.addEventListener("click", () => {
+            $nav.style.left = 0;
+        });
+        $navCls.addEventListener("click", () => {
+            $nav.style.left = "-100%"; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@media (min-width: 1200px) {
+    img.m{display: none;}
+    img.tab{display: none;}
+    img.pc{display: block;}
+
+    header{
+        height: 147px;
+        display: flex;
+        position: relative;
+    }
+    header h1{
+        padding-top: 30px;
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+    }
+    header h1 img{
+        width: unset;
+    }
+    header .btn-nav{
+        display: none;
+    }
+    header .btn-sns{
+        display: none;
+    }
+    header nav{
+        width: unset;
+        height: unset;
+        position: unset;
+        background-color: unset;
+        overflow-y: unset;
+    }
+    header nav .btn-cls{
+        display: none;
+    }
+    header nav .util{
+        position: absolute;
+        top: 42px;
+        right: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    header nav .util li:last-child{
+        display: flex;
+    }
+    header nav .util li:last-child .btn-sc{
+        display: block;
+    }
+    header nav .util li:last-child input{
+        display: block;
+        width: 90px;
+        border-bottom: 1px solid #fff;
+        margin-right: 10px;
+    }
+    header nav .util li a{
+        padding-right: 6px;
+    }
+    header nav .util li::after{
+        content: '|';
+    }
+    header nav .util li:last-child::after{
+        content: '';
+    }
+    header nav .util li{
+        color: rgba(193, 193, 193, 0.728);
+        font-size: 13px;
+    }
+    header nav .gnb{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        padding-top: unset;
+    }
+    header nav .gnb li{
+        color: rgba(193, 193, 193, 0.728);
+        font-size: 13px;
+        padding: 20px 30px;
+    }
+    header nav .gnb li a{
+        padding: 20px 30px;
+    }
+    .banner{
+        height: 600px;
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .s1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
